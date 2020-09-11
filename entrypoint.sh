@@ -20,4 +20,4 @@ gzip -dc /reactome/gk_current.sql.gz | mysql -u root --binary-mode reactome
 
 mysql -u root -e "use mysql;update user set authentication_string=password('root') where user='root'; update user set plugin='mysql_native_password' where User='root'; flush privileges;"
 
-java -jar reactome2gpml-converter/dist/reactome2gpml.jar localhost reactome root root 3306 /reactome Human $1
+java -jar reactome2gpml-converter/dist/reactome2gpml.jar localhost reactome root root 3306 /reactome/pathways Human $1
