@@ -9,7 +9,7 @@ RUN      mkdir /var/run/mysqld && \
 		ant=1.10.5-3~18.04 \
 		git \
 		software-properties-common \
-		mysql-server=5.7.31-0ubuntu0.18.04.1
+		mysql-server=5.7.33-0ubuntu0.18.04.1
 
 WORKDIR	/mysql
  
